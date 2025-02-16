@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Time Skip Hunt Begins...</title>
+    <title>The Cursed Temple Awaits...</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
         body {
             font-family: 'Courier New', monospace;
             margin: 0;
             padding: 0;
-            background: black;
-            color: #00ff99;
+            background: url('https://source.unsplash.com/1600x900/?ancient-temple,night') no-repeat center center fixed;
+            background-size: cover;
+            color: #FFD700;
             text-align: center;
+            text-shadow: 2px 2px 5px black;
         }
         .container {
-            padding: 50px;
-            max-width: 700px;
+            padding: 60px;
+            max-width: 750px;
             margin: auto;
+            background: rgba(0, 0, 0, 0.85);
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.5);
         }
         h1 {
-            font-size: 2.5em;
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 3em;
             margin-bottom: 10px;
+            color: #ff4500;
+            text-shadow: 3px 3px 8px black;
         }
         p {
-            font-size: 1.2em;
+            font-size: 1.3em;
         }
         .puzzle-box {
             background: rgba(255, 255, 255, 0.1);
@@ -41,27 +51,41 @@
             50% { text-shadow: -3px -3px 0px red, 3px 3px 0px blue; }
             100% { text-shadow: 3px -3px 0px red, -3px 3px 0px blue; }
         }
+        .hint {
+            font-size: 1em;
+            margin-top: 20px;
+            color: #ff4500;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="glitch">🕵️‍♂️ The Time Skip Hunt Begins... 🕵️‍♂️</h1>
-        <p>A long-lost secret whispers through time...</p>
+        <h1 class="glitch">🔮 The Cursed Temple Awaits... 🔮</h1>
+        <p>To seek the next box, beware—many have fallen to the curse of greed.</p>
         <div class="puzzle-box">
-            <p>🔍 Solve the riddle to find the second box:</p>
+            <p>🔍 Solve the riddle to find Box Two:</p>
             <p>
-                "Where the sun meets the sky, numbers align, <br>
-                A hidden path, a coded sign. <br>
-                Split the stars, count the sand, <br>
-                Latitude whispers where you stand. <br>
-                Mirror the moon, half the sum, <br>
-                Longitude waits, the hunt’s begun."
+                "An ancient shrine where the goddess rests, <br>
+                Her stone gaze sees the sun's golden crest. <br>
+                A city of warriors, steel, and might, <br>
+                Where battle cries once shook the night. <br><br>
+
+                A temple old, where riches gleam, <br>
+                A golden halo, a holy dream. <br>
+                Those who seek but do not see, <br>
+                Will forever be lost in eternity. <br><br>
+
+                Through twelve pillars, shadows creep, <br>
+                In lion’s land, where legends sleep. <br>
+                Three gods’ feet, a secret stays, <br>
+                Where cursed gold in silence lays. <br><br>
+
+                Follow the river, deep and wide, <br>
+                Where fortune calls and fates collide. <br>
+                When darkness falls and chants arise, <br>
+                The second box will meet your eyes..."  
             </p>
-            <p>📍 **Coordinates: ??, ??**</p>
-        </div>
-        <div class="puzzle-box">
-            <p>🔮 Another clue lies within ancient belief...</p>
-            <p>💠 "The treasure shall lie on **three gods' feet**—Brahma, Vishnu, and Mahesh."</p>
+            <p class="hint">📍 **The land of the Goddess, where the lions guard her throne.**</p>
         </div>
     </div>
 </body>
