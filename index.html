@@ -3,90 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Cursed Temple Awaits...</title>
+    <title>The Cursed Temple Awaits</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 
         body {
-            font-family: 'Courier New', monospace;
-            margin: 0;
-            padding: 0;
-            background: url('https://source.unsplash.com/1600x900/?ancient-temple,night') no-repeat center center fixed;
+            background: url('https://images.unsplash.com/photo-1585055585495-a27b5033f49b') no-repeat center center fixed;
             background-size: cover;
-            color: #FFD700;
+            color: gold;
+            font-family: 'Marcellus SC', serif;
             text-align: center;
-            text-shadow: 2px 2px 5px black;
+            padding: 50px;
+            animation: fadeIn 2s ease-in-out;
         }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
         .container {
-            padding: 60px;
-            max-width: 750px;
-            margin: auto;
-            background: rgba(0, 0, 0, 0.85);
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid gold;
+            padding: 30px;
             border-radius: 15px;
-            box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.5);
+            box-shadow: 0 0 20px gold;
+            display: inline-block;
+            max-width: 700px;
         }
+
         h1 {
-            font-family: 'UnifrakturCook', cursive;
-            font-size: 3em;
-            margin-bottom: 10px;
-            color: #ff4500;
-            text-shadow: 3px 3px 8px black;
+            font-size: 2.8em;
+            text-shadow: 3px 3px 15px gold;
+            animation: glow 1.5s infinite alternate;
         }
+
+        @keyframes glow {
+            from { text-shadow: 2px 2px 10px gold; }
+            to { text-shadow: 4px 4px 20px gold; }
+        }
+
         p {
-            font-size: 1.3em;
-        }
-        .puzzle-box {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
             font-size: 1.2em;
-            border-left: 5px solid #ffcc00;
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
-        .glitch {
-            animation: glitch 1s infinite;
+
+        .mantra {
+            font-size: 2em;
+            color: crimson;
+            font-weight: bold;
+            text-shadow: 2px 2px 15px crimson;
+            animation: pulse 2s infinite alternate;
         }
-        @keyframes glitch {
-            0% { text-shadow: 3px 3px 0px red, -3px -3px 0px blue; }
-            50% { text-shadow: -3px -3px 0px red, 3px 3px 0px blue; }
-            100% { text-shadow: 3px -3px 0px red, -3px 3px 0px blue; }
-        }
-        .hint {
-            font-size: 1em;
-            margin-top: 20px;
-            color: #ff4500;
+
+        @keyframes pulse {
+            from { text-shadow: 0 0 10px crimson; }
+            to { text-shadow: 0 0 20px crimson; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="glitch">🔮 The Cursed Temple Awaits... 🔮</h1>
-        <p>To seek the next box, beware—many have fallen to the curse of greed.</p>
-        <div class="puzzle-box">
-            <p>🔍 Solve the riddle to find Box Two:</p>
-            <p>
-                "An ancient shrine where the goddess rests, <br>
-                Her stone gaze sees the sun's golden crest. <br>
-                A city of warriors, steel, and might, <br>
-                Where battle cries once shook the night. <br><br>
-
-                A temple old, where riches gleam, <br>
-                A golden halo, a holy dream. <br>
-                Those who seek but do not see, <br>
-                Will forever be lost in eternity. <br><br>
-
-                Through twelve pillars, shadows creep, <br>
-                In lion’s land, where legends sleep. <br>
-                Three gods’ feet, a secret stays, <br>
-                Where cursed gold in silence lays. <br><br>
-
-                Follow the river, deep and wide, <br>
-                Where fortune calls and fates collide. <br>
-                When darkness falls and chants arise, <br>
-                The second box will meet your eyes..."  
-            </p>
-            <p class="hint">📍 **The land of the Goddess, where the lions guard her throne.**</p>
-        </div>
+        <h1>The Cursed Temple Awaits</h1>
+        <p>
+            Blinded by greed, many have sought, yet none have returned with what they sought.<br>
+            Where three gods’ feet rest in stone, a cursed temple stands, long overthrown.<br>
+            Riches once flowed, now turned to dust, yet those who seek may earn their trust.<br>
+            Follow the echoes of forgotten chants, where divine grace and fate still dance.
+        </p>
+        <p class="mantra">महालक्ष्म्यै नमः</p>
     </div>
 </body>
 </html>
